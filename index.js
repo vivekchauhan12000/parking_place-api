@@ -8,7 +8,7 @@ const userRoute=require("./routes/users");
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://vivek:vivek@cluster0.9pguw.mongodb.net/pin?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>{
+mongoose.connect('',{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>{
   console.log("MongoDb connected");
 }).catch((err)=>
 console.log(err)
